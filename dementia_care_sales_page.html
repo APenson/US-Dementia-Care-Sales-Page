@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"We Need to Keep Mom Safe at Home" - Your Complete Guide to Quality Dementia Care</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fafafa;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 10px;
+        }
+        
+        .header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        
+        .header .subtitle {
+            font-size: 1.2rem;
+            font-style: italic;
+            opacity: 0.9;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            padding: 0 20px;
+        }
+        
+        .section h2 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            border-left: 4px solid #667eea;
+            padding-left: 15px;
+        }
+        
+        .section h3 {
+            color: #34495e;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            margin-top: 25px;
+        }
+        
+        .section p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        .highlight-box {
+            background-color: #f8f9ff;
+            border: 2px solid #667eea;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+        
+        .stats {
+            background-color: #fff5f5;
+            border-left: 5px solid #e53e3e;
+            padding: 20px;
+            margin: 25px 0;
+        }
+        
+        .stats ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .stats li {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .stats li:before {
+            content: "📊 ";
+            margin-right: 8px;
+        }
+        
+        .four-steps {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        
+        .four-steps h3 {
+            color: white;
+            text-align: center;
+            font-size: 1.6rem;
+            margin-bottom: 25px;
+        }
+        
+        .step {
+            background-color: rgba(255,255,255,0.1);
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border-left: 4px solid white;
+        }
+        
+        .step h4 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+        
+        .bonus-section {
+            background-color: #f0fff4;
+            border: 2px dashed #38a169;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        
+        .bonus-section h3 {
+            color: #38a169;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .bonus-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .bonus-item {
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 3px solid #38a169;
+        }
+        
+        .pricing {
+            text-align: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+            margin: 40px 0;
+        }
+        
+        .price {
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        
+        .price-note {
+            font-size: 1rem;
+            opacity: 0.9;
+            margin-bottom: 25px;
+        }
+        
+        .cta-button {
+            background-color: #e53e3e;
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.3rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+        }
+        
+        .cta-button:hover {
+            background-color: #c53030;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        
+        .testimonial {
+            background-color: #f7fafc;
+            border-left: 5px solid #4299e1;
+            padding: 20px;
+            margin: 25px 0;
+            font-style: italic;
+        }
+        
+        .testimonial-author {
+            text-align: right;
+            font-weight: bold;
+            margin-top: 15px;
+            font-style: normal;
+        }
+        
+        .guarantee {
+            background-color: #fffbf0;
+            border: 2px solid #f6ad55;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .bonus-list {
+                grid-template-columns: 1fr;
+            }
+            
+            .price {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>"We Need to Keep Mom Safe at Home"</h1>
+            <div class="subtitle">Your Complete 4-Step Guide to Quality Dementia Care in Her Own Home</div>
+        </div>
+
+        <div class="section">
+            <p><strong>If you're reading this, you're probably facing one of the most heartbreaking decisions a family can face.</strong></p>
+            
+            <p>You've watched the person you love struggle with dementia. You've seen the confusion in their eyes, felt helpless during the difficult moments, and lost sleep worrying about their safety. Now someone has mentioned "putting them in a home," and your heart breaks a little more.</p>
+
+            <div class="stats">
+                <p><strong>You're not alone in feeling overwhelmed:</strong></p>
+                <ul>
+                    <li><strong>$373,527</strong> - Average annual cost of dementia care in America</li>
+                    <li><strong>83%</strong> of help provided to older adults comes from unpaid family caregivers</li>
+                    <li><strong>61%</strong> of dementia caregivers report high emotional stress</li>
+                    <li><strong>$108,405</strong> - Average annual nursing home cost vs. <strong>$61,776</strong> for quality home care</li>
+                </ul>
+            </div>
+
+            <p>But here's what most families don't realize: <strong>Quality home care isn't just more compassionate—it's often more affordable when you know how to navigate America's complex healthcare system.</strong></p>
+        </div>
+
+        <div class="section">
+            <h2>The Problem: America's Healthcare Maze</h2>
+            <p>Unlike families in other countries who can simply call their national health service, American families must piece together a complex puzzle of Medicare, Medicaid, private insurance, and Veterans benefits—each with different rules, coverage limits, and application processes.</p>
+
+            <p>Most families make costly mistakes because they don't understand:</p>
+            <ul style="margin-left: 30px; margin-bottom: 20px;">
+                <li>What Medicare actually covers for dementia home care (hint: it's more than you think)</li>
+                <li>How Medicaid waiver programs can pay for comprehensive home services</li>
+                <li>Which Veterans benefits provide up to $2,431/month for home care expenses</li>
+                <li>How to coordinate multiple funding sources for maximum coverage</li>
+            </ul>
+
+            <div class="testimonial">
+                "I assumed Medicare wouldn't cover home care because everyone said it only covers skilled nursing. I was wrong. We got 8 weeks of covered services that saved us over $12,000, and it gave us time to set up a sustainable long-term plan."
+                <div class="testimonial-author">— Margaret Johnson, Ohio</div>
+            </div>
+        </div>
+
+        <div class="four-steps">
+            <h3>The 4-Step Home Care Success System</h3>
+            <p style="text-align: center; margin-bottom: 25px;">This proven system has helped hundreds of families navigate from crisis to quality home care in 30 days or less</p>
+            
+            <div class="step">
+                <h4>Step 1: Assessment and Insurance Navigation (Week 1)</h4>
+                <p>Complete medical and functional assessments, verify all insurance benefits, and identify every available funding source—including ones most families never know exist.</p>
+            </div>
+            
+            <div class="step">
+                <h4>Step 2: Provider Selection and Credentialing (Week 2)</h4>
+                <p>Research and vet care providers using our comprehensive evaluation system. Learn the difference between Medicare-certified agencies and private providers, and how to verify licensing and quality standards.</p>
+            </div>
+            
+            <div class="step">
+                <h4>Step 3: Implementation and Care Coordination (Weeks 3-4)</h4>
+                <p>Launch care services with professional coordination systems. Establish communication protocols and integrate technology for safety and family peace of mind.</p>
+            </div>
+            
+            <div class="step">
+                <h4>Step 4: Long-term Success and Benefits Management (Ongoing)</h4>
+                <p>Optimize care delivery, establish quality monitoring systems, and plan for evolving needs while maximizing insurance benefits and managing costs.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Real Success Stories</h2>
+            
+            <div class="highlight-box">
+                <h3>The Rodriguez Family - Texas</h3>
+                <p><strong>Challenge:</strong> Middle-class family with modest assets, caring for Maria (82) with vascular dementia. Making too much for Medicaid but nowhere near enough for private care at $5,000-7,000 monthly.</p>
+                <p><strong>Solution:</strong> Using the 4-Step System, they accessed Texas's Community Based Alternatives waiver program.</p>
+                <p><strong>Result:</strong> $3,200/month in Medicaid coverage for comprehensive home care, plus both adults kept their jobs and health insurance.</p>
+            </div>
+
+            <div class="highlight-box">
+                <h3>The Chen Family - Oregon</h3>
+                <p><strong>Challenge:</strong> Korean War veteran William (86) with Alzheimer's. Fixed income from Social Security and small military pension. Never used VA benefits beyond basic medical care.</p>
+                <p><strong>Solution:</strong> Applied for Veterans Aid & Attendance benefits through the guide's detailed application process.</p>
+                <p><strong>Result:</strong> $2,431/month in tax-free VA benefits for home care expenses, plus professional care coordination.</p>
+            </div>
+        </div>
+
+        <div class="bonus-section">
+            <h3>🎁 Exclusive Interactive Bonus Materials Included</h3>
+            <p style="text-align: center;"><strong>Over $200 value in interactive tools you can save on your device at no extra cost</strong></p>
+            
+            <div class="bonus-list">
+                <div class="bonus-item">
+                    <strong>Interactive Medicare Benefits Calculator</strong><br>
+                    Calculate exactly what Medicare will cover - save and update as needed
+                </div>
+                <div class="bonus-item">
+                    <strong>Interactive Medicaid Spend-Down Worksheet</strong><br>
+                    Digital tool to determine eligibility - works on any device
+                </div>
+                <div class="bonus-item">
+                    <strong>Interactive Veterans Benefits Guide</strong><br>
+                    Step-by-step digital application process you can complete online
+                </div>
+                <div class="bonus-item">
+                    <strong>Interactive Provider Interview Checklist</strong><br>
+                    Digital evaluation system - check off and save your notes
+                </div>
+                <div class="bonus-item">
+                    <strong>Interactive Insurance Benefits Tracker</strong><br>
+                    Organize and track all claims digitally - updates automatically
+                </div>
+                <div class="bonus-item">
+                    <strong>Interactive Emergency Contact Template</strong><br>
+                    Fill in once, save to all devices, update as needed
+                </div>
+                <div class="bonus-item">
+                    <strong>Interactive State Resource Quick Reference</strong><br>
+                    Clickable links to your state's programs - bookmark for easy access
+                </div>
+                <div class="bonus-item">
+                    <strong>Interactive Home Activities Guide</strong><br>
+                    Clickable product links and customizable activity schedules
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Why This Guide is Different</h2>
+            <p>This isn't another generic caregiving book. This is a specific roadmap created for American families, addressing the unique challenges of our healthcare system:</p>
+
+            <ul style="margin-left: 30px; margin-bottom: 20px;">
+                <li><strong>Medicare vs. Medicaid Navigation:</strong> Clear explanations of what each program actually covers</li>
+                <li><strong>State-by-State Variations:</strong> Recognition that services differ dramatically across states</li>
+                <li><strong>Real Success Stories:</strong> Case studies from families who've successfully implemented these strategies</li>
+                <li><strong>Financial Protection:</strong> Legal and financial strategies to preserve assets while accessing care</li>
+                <li><strong>Crisis Prevention:</strong> Early warning systems that prevent emergencies</li>
+            </ul>
+
+            <div class="testimonial">
+                "Once I stopped trying to make the system work the way I thought it should work and started learning how it actually works, everything changed. We got Dad the care he needed, preserved our family's financial security, and gave him three more years of dignity at home."
+                <div class="testimonial-author">— Michael R., Texas</div>
+            </div>
+        </div>
+
+        <div class="pricing">
+            <h2 style="color: white; margin-bottom: 10px;">Complete 4-Step System + All Interactive Bonus Tools</h2>
+            <div class="price">$14.99</div>
+            <div class="price-note">One-time investment • Instant digital access • Interactive tools save to your device</div>
+            <p style="margin-bottom: 25px;">Compare this to just one hour of consultation with a geriatric care manager ($150-300) or the cost of making uninformed decisions that could cost thousands.</p>
+            <a href="https://payhip.com/b/z9lHL" class="cta-button">Get Instant Access Now</a>
+        </div>
+
+        <div class="guarantee">
+            <h3 style="color: #d69e2e; margin-bottom: 15px;">💝 Your Family Deserves Peace of Mind</h3>
+            <p>Your loved one deserves to remain in the comfort and dignity of their own home. You deserve to stop feeling overwhelmed and start feeling confident about the care decisions you're making.</p>
+            <p style="margin-top: 15px;"><strong>This guide gives you both.</strong></p>
+        </div>
+
+        <div class="section">
+            <h2>Don't Wait Until It's Too Late</h2>
+            <p>Every day families tell themselves they'll "figure it out later" or wait until the situation becomes a crisis. But by then, your options become limited and more expensive.</p>
+
+            <p><strong>The families who succeed are those who take action before they're forced to.</strong> They're the ones who have systems in place, who understand their options, and who can make informed decisions instead of desperate ones.</p>
+
+            <p>Six months from now, you can either be managing a successful home care situation with confidence and peace of mind, or you can still be struggling with the same overwhelming questions you have today.</p>
+
+            <p style="text-align: center; margin-top: 30px; font-size: 1.2rem; font-weight: bold;">The choice is yours. Your loved one is counting on you to make it.</p>
+        </div>
+
+        <div style="text-align: center; margin: 40px 0;">
+            <a href="https://payhip.com/b/z9lHL" class="cta-button">Start Your 4-Step Journey Today</a>
+            <p style="margin-top: 15px; color: #666;">Instant download • Interactive tools work on all devices • Save and access anywhere</p>
+        </div>
+
+        <div style="text-align: center; color: #888; font-size: 0.9rem; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd;">
+            <p>This guide provides educational information and should not replace professional medical or legal advice. Always consult with healthcare providers and legal professionals for your specific situation.</p>
+        </div>
+    </div>
+</body>
+</html>
